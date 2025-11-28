@@ -280,69 +280,77 @@ body {
 }
 /* -------------------- Media Queries ---------------------- */
 
-/* الشاشات الصغيرة (الهاتف) */
-@media (max-width: 768px) {
+/*  */
+@media (max-width: 480px) {
+
+    /* Logo */
+    .logo h1 {
+        font-size: 1.2rem; /* حجم أصغر */
+    }
 
     /* Navigation */
-    .nav-center {
-        flex-direction: column;
-        padding: 10px 20px;
-    }
-
     .nav-list {
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 10px;
+        flex-direction: column; /* تصبح القائمة عمودية */
+        gap: 10px; /* مسافة أقل بين الروابط */
+        font-size: 14px; /* تصغير الخط */
         text-align: center;
     }
 
-    .logo h1 {
-        font-size: 1.5rem;
-    }
-
-    /* Top nav */
-    .top-nav .container {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    /* Cards (Destinations) */
-    .cont {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        padding: 0 20px;
-        gap: 15px;
-    }
-
-    .card img {
-        height: 150px;
-    }
-
-    /* Home section */
-    #home h2 {
-        font-size: 24px;
-    }
-
-    #home h4 {
-        font-size: 18px;
-    }
-
-    #home p {
+    .nav-link {
         font-size: 14px;
     }
 
+    /* Top Nav */
+    .top-nav .container {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* Home Section */
+    #home h2 {
+        font-size: 20px; /* تصغير العنوان الرئيسي */
+    }
+
+    #home h4 {
+        font-size: 16px; /* تصغير العنوان الفرعي */
+    }
+
+    #home p {
+        font-size: 13px; /* تصغير النص */
+        padding: 0 10px; /* إضافة حواف داخلية */
+        text-align: center;
+    }
+
     .home-btn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    /* Cards */
+    .cont {
+        grid-template-columns: 1fr; /* عمود واحد لكل بطاقة */
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .card img {
+        height: 140px;
+    }
+
+    .card .titre {
         font-size: 16px;
-        padding: 10px 20px;
     }
 
     /* Footer */
     .footer {
-        padding: 30px 20px;
+        padding: 20px 15px;
     }
 
     .footer .row {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
     }
+
 }

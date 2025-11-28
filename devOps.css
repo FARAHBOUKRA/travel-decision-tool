@@ -359,7 +359,7 @@ body {
     }
 
     .footer .row {
-        flex-direction: column;
+      
         gap: 15px;
     }
 }

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Glide js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+
+<!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="devOps.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    
+    <title>Découvrez Votre Monde</title>
+</head>
+<body>
+
+
+
+    <!-- Header -->
+    <header>
+
+   <!-- Top Nav *********************************************************-->
+      
+
+   <div class="top-nav">
+    <div class="container d-flex">
+      <p> Call Us: (001) 2222-55555</p>
+      <ul class="d-flex">
+        <li><a href="#">About Us</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+  <!--*********************************************************************-->
+        
+<!--*********************************************************************-->
+<div class="navigation ">
+    <div class="nav-center container d-flex">
+
+    <a href="index1.html"class="logo"><h1>DécouvrezVotreMonde</h1></a>
+
+
+<ul class="nav-list d-flex">
+    <li class="nav-item"><a href="" class="nav-link">Acceuil</a></li>
+    <li class="nav-item"> <a href="#" class="nav-link">àpropos</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">destinations</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">contact</a></li>
+</ul>
+
+
+
+<!--*********************************************************************-->
+  <div class="dropdown">
+  <a href="#" class="btn-reservation">
+    <img class="imag" src="prr.png" alt="profil">
+   
+  </a>
+
+ 
+  </div>
+</div>
+     
+                 
+            
+         
+     </header>
+
+      <!-- button compte *********************************************************************-->
+
+     <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("dropdownButton");  // On récupère le bouton qui va ouvrir/fermer le menu déroulant
+    const menu = document.getElementById("dropdownMenu");     // On récupère le menu déroulant (dropdown)
+
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation(); // Empêche le clic de se propager à d'autres éléments (important pour éviter la fermeture immédiate)
+      
+      // On affiche ou cache le menu selon son état actuel
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    });
+       
+    // Si on clique n'importe où ailleurs dans le document, le menu se ferme
+    document.addEventListener("click", function () {
+      menu.style.display = "none";
+    });
+  });
+</script>
+
+
+    </div>
+</div>
+    </header>
+
+    
+      
+      
+   
+  
+
+<style>
+ 
+</style>
+   <!-- preloader *********************************************************-->
+   <div id="preloader"> </div>
+
+    <!--*********************************************************-->
+ 
+
+<!--   acceuil section *******************************************************************-->
+
+             
+
+   <section id="home">
+        <h2>Venez voyager avec nous </h2>
+        <h4>Découvrez Votre Monde</h4>
+        <p> Découvrez la plus belle vision du voyage avec "Découvrez Votre Monde"  </p>
+        <p>Nous vous proposons des expériences bon marché à des prix réduits incluant votre confort et votre satisfaction à chaque voyage</p>
+        <a href="#" class="btn-reservation home-btn">Réserver Maintenant</a>
+        
+    </section>
+        
+    <hr>
+       
+    <h1 class="pr">Nos destinations :
+    </h1>
+   
+    <div class="cont">
+      
+
+      <div class="card">
+       <a class="image" href="#"><img src="tunisia.jpg"></a>
+        <div class="titre"> <p>Tunisie</p></div>
+      </div>
+     
+  
+     
+      <div class="card">
+      <a class="image"  href="#" > <img src="turk.jpg"></a>
+        <div class="titre"><p>turquie</p></div>
+      </div>
+     
+  
+   
+     
+      <div class="card">
+       <a class="image" href="#"><img src="quatar.jpg"></a>
+        <div class="titre"><p>Qatar</p></div>
+      </div>
+     
+  
+   
+      <div class="card">
+       <a class="image" href="#"><img src="malisia.jpg"></a>
+        <div class="titre"><p>malaisie</p></div>
+      </div>
+     </div>
+
+     <h1 class="pr"> ou irez-vous ensuite!
+    </h1>
+     <div class="cont">
+      
+
+      <div class="card">
+       <a class="image" href="#"><img src="maka.jpg"></a>
+        <div class="titre"> <p>omra</p></div>
+      </div>
+     
+  
+     
+      <div class="card">
+      <a class="image"  href="#" > <img src="dubai.jpg"></a>
+        <div class="titre"><p>dubai</p></div>
+      </div>
+     
+  
+   
+     
+      <div class="card">
+       <a class="image" href="{% url 'egypt' %}"><img src="egypt.jpg"></a>
+        <div class="titre"><p>egypt</p></div>
+      </div>
+     
+  
+   
+      <div class="card">
+       <a class="image" href="{% url 'maldiv' %}"><img src="maldiv.jpg"></a>
+        <div class="titre"><p>maldives</p></div>
+      </div>
+     </div>
+
+     
+   
+       
+
+
+
+
+
+
+
+
+
+
+
+<!--scroll*****************-->
+
+<script>
+// Sélection de tous les éléments
+const prElements = document.querySelectorAll('.pr');
+const psElements = document.querySelectorAll('.ps');
+const cards = document.querySelectorAll('.card');
+
+// Fonction qui vérifie si un élément est visible dans la fenêtre
+const isInViewport = (element) => {
+  const rect = element.getBoundingClientRect(); // Récupère les dimensions et la position de l'élément par rapport à la fenêtre
+  return rect.top >= 0 && rect.top <= window.innerHeight; // Retourne true si le haut de l'élément est visible dans la fenêtre
+};
+
+// Fonction appelée à chaque défilement (scroll)
+const handleScroll = () => {
+
+  prElements.forEach(element => {
+    if (isInViewport(element)) {
+      element.classList.add('visible'); // Ajoute la classe "visible" si l'élément est dans la fenêtre
+    } else {
+      element.classList.remove('visible'); // Sinon, la classe est supprimée
+    }
+  });
+
+  
+  // Même logique appliquée à tous les éléments avec la classe ".ps"
+  psElements.forEach(element => {
+    if (isInViewport(element)) {
+      element.classList.add('visible');
+    } else {
+      element.classList.remove('visible');
+    }
+  });
+
+      // Même logique appliquée à tous les éléments avec la classe ".card"
+  cards.forEach(card => {
+    const img = card.querySelector('img');
+    if (isInViewport(card)) {
+      card.classList.add('visible');
+    } else {
+      card.classList.remove('visible');
+    }
+  });
+};
+
+// Écoute l'événement de défilement pour appeler la fonction handleScroll
+window.addEventListener('scroll', handleScroll);
+
+// Appelle la fonction handleScroll dès que la page est chargée
+document.addEventListener('DOMContentLoaded', handleScroll);
+
+   
+
+</script>
+  
+
+
+
+
+
+
+
+   <!--  *********************************************************-->
+
+   <!-- iframe pour preloader *********************************************************-->
+
+  
+
+     <!-- Footer ************************************************************-->
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>INFORMATION</h4>
+          <a href="AboutUs.html">About us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="">Term & Conditions</a>
+          <a href="">Guide de voyage</a>
+        </div>
+        <div class="col d-flex ">
+          <h4>USEFUL LINK</h4>
+          <a href="">Agence de voyage</a>
+          <a href="">Customer Services</a>
+          <a href="">Promotion</a> 
+          <a href="">Top voyage</a>
+        </div>
+        <div class="col d-flex">
+        
+            <a href="https://www.facebook.com/?locale=ar_AR"><span><i class='bx bxl-facebook-square'></i></span></a>
+            <a href="https://www.instagram.com/"><span><i class='bx bxl-instagram-alt'></i></span></a>
+            <a href="https://github.com/signup?source=login"><span><i class='bx bxl-github'></i></span></a>
+            <a href="https://x.com/?lang=ar"><span><i class='bx bxl-twitter'></i></span></a>
+            <a href="https://www.pinterest.com/"><span><i class='bx bxl-pinterest'></i></span></a>
+    
+
+        </div>
+      </div>
+    </footer>
+
+   <!--script for  preloader *********************************************************-->
+   <script defer>
+    var toggle_menu = document.querySelector('.responsive-menu');
+    var menu = document.querySelector('.menu');
+    toggle_menu.onclick= function(){
+         toggle_menu.classList.toggle('active');
+         menu.classList.toggle('responsive')
+    }
+</script>
+
+
+
+<script defer>
+var loader = document.getElementById("preloader");
+var navigation = document.querySelector(".navigation")
+var  topnav = document.querySelector(".top-nav")
+window.addEventListener("load",function(){
+loader.style.display="none";
+navigation.style.display="block";
+topnav.style.display="block";
+})
+
+</script>
+     
+
+
+
+
+</body>
+</html>
+
+
+

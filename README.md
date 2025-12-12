@@ -28,7 +28,7 @@
         Exécution de l'image :    Le conteneur a été lancé et l'application est accessible dans le navigateur à l'adresse :  
                 [http://localhost:8080](http://localhost:8080).
         Preuve du fonctionnement : Screenshot montrant Docker Desktop et l'application en cours d'exécution :  
-               ![Docker fonctionne](https://github.com/username/repository/raw/main/dock.png)
+               ![Docker fonctionne](images/dock.png)
 
    3.3. Pipeline CI/CD avec GitHub Actions :
         Le workflow contient trois étapes :
@@ -37,6 +37,7 @@
          Deploy : Déploiement sur un registre Docker ou serveur distant via SSH (selon la configuration).
 
 4.Difficultés Rencontrées et Solutions:
+
 
 
 

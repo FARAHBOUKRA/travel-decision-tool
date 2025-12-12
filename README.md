@@ -82,7 +82,8 @@ Lancement du conteneur et surveillance des sorties.
 
 Test de l’application via le navigateur.
 
-Garantie du fonctionnement sur tout autre ordinateur, y compris l’environnement de l’enseignant.
+
+
 
 
 

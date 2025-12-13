@@ -7,18 +7,21 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Build Docker image
-        run: docker build -t ${{ secrets.DOCKER_USER }}/travel-tool:latest .
+        run: docker build -t mon-site .
 
-      - name: Login Docker Hub
-        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USER }}" --password-stdin
+      - name: Test Docker image
+        run: |
+          docker run -d -p 8080:80 --name test-site mon-site
+          sleep 5
+          curl -f http://localhost:8080 || exit 1
+          docker stop test-site
+          docker rm test-site
 
-      - name: Push Docker image
-        run: docker push ${{ secrets.DOCKER_USER }}/travel-tool:latest
-
-
+      - name: Deploy (local)
+        run: |
+          echo "Déploiement local effectué, ou ajoute ici le script pour serveur si nécessaire"

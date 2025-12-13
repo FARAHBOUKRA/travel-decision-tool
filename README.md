@@ -58,6 +58,10 @@
 
     Deploy : Déploiement sur un registre Docker ou serveur distant via SSH (selon la configuration).
 
+     Preuve du fonctionnement : capture d'écrond montrant d'exécution de pipline :  
+
+      ![Docker fonctionne](pipli.png)
+
 4.Difficultés Rencontrées et Solutions:
 
 1.Compréhension de la liaison Docker – GitHub
@@ -99,6 +103,7 @@ de passe et tokens, et éviter de les écrire en clair dans le code.
 Solution : Organiser une revue des permissions et des étapes de déploiement avec tous 
 
 les membres pour s’assurer que chacun a les accès nécessaires.
+
 
 
 

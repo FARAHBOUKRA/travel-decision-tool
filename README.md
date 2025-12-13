@@ -83,13 +83,23 @@ Lancement du conteneur et surveillance des sorties.
 Test de l’application via le navigateur.
 
 3. Échec de l’authentification Docker dans le pipeline CI/CD
-Solution : Vérifier que les identifiants Docker (comme les tokens) sont bien stockés dans les secrets GitHub Actions et correctement référencés dans le fichier de workflow.
+   
+Solution : Vérifier que les identifiants Docker (comme les tokens) sont bien stockés
+
+dans les secrets GitHub Actions et correctement référencés dans le fichier de workflow.
 
 4. Sécurisation des informations sensibles dans un projet collaboratif
-Solution : Utiliser exclusivement les variables secrètes de GitHub Actions pour les mots de passe et tokens, et éviter de les écrire en clair dans le code.
+   
+Solution : Utiliser exclusivement les variables secrètes de GitHub Actions pour les mots 
+
+de passe et tokens, et éviter de les écrire en clair dans le code.
 
 5. Coordination de l’équipe lors de la configuration du CI/CD
-Solution : Organiser une revue des permissions et des étapes de déploiement avec tous les membres pour s’assurer que chacun a les accès nécessaires.
+   
+Solution : Organiser une revue des permissions et des étapes de déploiement avec tous 
+
+les membres pour s’assurer que chacun a les accès nécessaires.
+
 
 
 
